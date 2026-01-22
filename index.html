@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 </head>
 
 <!-- header -->
@@ -43,7 +45,8 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2 text-dark bg-white" type="search" placeholder="Cerca..." aria-label="Search" />
+                    <input class="form-control me-2 text-dark bg-white" type="search" placeholder="Cerca..."
+                        aria-label="Search" />
                     <button class="btn btn-outline-light" type="submit">Search</button>
                 </form>
             </div>
@@ -54,12 +57,147 @@
 
 <body>
 
+    <div class="container">
+
+        <!-- titolo e bottone  -->
+        <div class="d-flex justify-content-between align-items-center mb-3 my-4">
+            <h5 class="mb-0">Catalogo Libri</h5>
+            <button class="btn btn-primary btn-sm">Aggiungi Libro</button>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-lg-8">
+                <div class="table-responsive">
+                    <table class="table table-striped align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col">Titolo</th>
+                                <th scope="col" class="d-none d-md-table-cell text-center">
+                                    Data prestito
+                                </th>
+                                <th scope="col" class="text-center">Stato</th>
+                                <th scope="col" class="text-end">Azioni</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>I pilastri della terra</td>
+                                <td class="d-none d-md-table-cell text-center">-</td>
+                                <td class="text-center"><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="text-end">
+                                    <div class="btn-group btn-group-sm" role="group">
+                                        <button class="btn btn-outline-secondary">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button class="btn btn-outline-secondary">
+                                            <i class="bi bi-trash3-fill"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <!-- tabella Todo -->
+                <ul class="list-group mb-4">
+                    <li class="list-group-item fs-3 text bg-body-secondary">
+                        Todo
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                        <label class="form-check-label" for="firstCheckbox">
+                            Chiamare segreteria
+                        </label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                        <label class="form-check-label" for="secondCheckbox">
+                            Mandare avvisi prestiti scaduti
+                        </label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                        <label class="form-check-label" for="thirdCheckbox">
+                            Ordinare nuvi libri
+                        </label>
+                    </li>
+                </ul>
+
+                <!-- tabella F.A.Q. -->
+                <ul class="list-group accordion" id="accordionExample">
+                    <li class="list-group-item fs-3 text bg-body-secondary">
+                        F.A.Q.
+                    </li>
+                    <li class="list-group-item">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Come aggiungere un nuovo libro?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic consectetur esse
+                                    impedit eligendi repellendus earum adipisci sit nam odit est delectus debitis
+                                    cupiditate totam magni dolorum aspernatur, temporibus ducimus nostrum.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Come posso aggiungere all'anagrafica utenti?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic consectetur esse
+                                    impedit eligendi repellendus earum adipisci sit nam odit est delectus debitis
+                                    cupiditate totam magni dolorum aspernatur, temporibus ducimus nostrum.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Posso usare questa dashboard da mobile?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic consectetur esse
+                                    impedit eligendi repellendus earum adipisci sit nam odit est delectus debitis
+                                    cupiditate totam magni dolorum aspernatur, temporibus ducimus nostrum.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
