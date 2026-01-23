@@ -56,39 +56,67 @@
 </header>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
 
-        <!-- header new page -->
-        <h5 class="my-3">Nuovo Libro</h5>
+        <!-- main page -->
+        <main>
 
-        <!-- form nome e cognome autore -->
-        <div class="text-start">
-            <div class="row">
-                <div class="col-6">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputName1" class="form-label">
-                                Nome Autore
-                            </label>
-                            <input type="text" placeholder="Inserisci il nome dell'autore" class="form-control"
-                                id="exampleInputName1" aria-describedby="emailHelp">
-                        </div>
-                    </form>
-                </div>
-                <div class="col-6">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputName1" class="form-label">
-                                Cognome Autore
-                            </label>
-                            <input type="text" placeholder="Inserisci il cognome dell'autore" class="form-control"
-                                id="exampleInputName1" aria-describedby="emailHelp">
-                        </div>
-                    </form>
+            <!-- header new page -->
+            <h5 class="my-3">Nuovo Libro</h5>
+
+            
+            <!-- form nome e cognome autore -->
+            <div class="text-start">
+                <div class="row">
+                    <div class="col-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputName1" class="form-label fw-medium">
+                                    Nome Autore
+                                </label>
+                                <input type="text" placeholder="Inserisci il nome dell'autore" class="form-control"
+                                    id="exampleInputName1" aria-describedby="nameHelp">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputName2" class="form-label fw-medium">
+                                    Cognome Autore
+                                </label>
+                                <input type="text" placeholder="Inserisci il cognome dell'autore" class="form-control"
+                                    id="exampleInputName2" aria-describedby="nameHelp">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
 
+
+            <!-- form titolo libro -->
+            <div class="text-start">
+                <div class="row">
+                    <div class="col-12">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputbook-Name1" class="form-label fw-medium">
+                                    Titolo
+                                </label>
+                                <input type="text" placeholder="Inserisci titolo del libro" class="form-control"
+                                    id="exampleInputbook-Name1" aria-describedby="book-nameHelp">
+                            </div>
+                            <div id="book-nameHelp" class="form-text mt-n4">
+                                Titolo versione italiana
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </main>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
