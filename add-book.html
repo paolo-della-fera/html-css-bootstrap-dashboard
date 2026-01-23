@@ -44,7 +44,7 @@
                         <a class="nav-link" href="#">Help</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <form class="d-none" role="search">
                     <input class="form-control me-2 text-dark bg-white" type="search" placeholder="Cerca..."
                         aria-label="Search" />
                     <button class="btn btn-outline-light" type="submit">Search</button>
@@ -64,7 +64,7 @@
             <!-- header new page -->
             <h5 class="my-3">Nuovo Libro</h5>
 
-            
+
             <!-- form nome e cognome autore -->
             <div class="text-start">
                 <div class="row">
@@ -114,6 +114,42 @@
                 </div>
             </div>
 
+
+            <!-- form tipo di libro -->
+
+            <div class="text-start mt-3">
+                <div class="row g-3">
+
+                    <!-- genere libro -->
+                    <div class="col-12 col-lg-4">
+                        <label class="form-label fw-medium">Genere</label>
+                        <select class="form-select">
+                            <option selected>Scegli il genere</option>
+                            <option value="1">Horror</option>
+                            <option value="2">Giallo</option>
+                            <option value="3">Fantasy</option>
+                        </select>
+                    </div>
+
+                    <!-- anno di pubblicazione -->
+                    <div class="col-12 col-lg-4">
+                        <form>
+                            <label class="form-label fw-medium">Anno di Pubblicazione</label>
+                            <input type="text" class="form-control" placeholder="Inserisci l'anno">
+                        </form>
+                    </div>
+
+                    <!-- codice libro -->
+                    <div class="col-12 col-lg-4">
+                        <form>
+                            <label class="form-label fw-medium">ISBN#</label>
+                            <input type="text" class="form-control" placeholder="Inserisci il codice ISBN#">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <hr class="mt-5">
 
 
         </main>
