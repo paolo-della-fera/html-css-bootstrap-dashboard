@@ -13,6 +13,7 @@ Così facendo il codice CSS custom che scriverete risulterà abbastanza ridotto.
 
 
 
+# Bootstrap Demo pt.2
 
 Descrizione
 Aggiungiamo una nuova pagina alla dashboard seguendo gli screenshot allegati.
